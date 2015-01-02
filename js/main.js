@@ -21,7 +21,7 @@ $(document).ready(function(){
 	    {
 		  animateClass: 'animated',
 		  mobile: false,
-		  offset: 100
+		  offset: 300
 		}
 	);
 	wow.init();
@@ -44,7 +44,7 @@ $(document).ready(function(){
 		}
 
 	    $('html, body').animate({
-	        scrollTop: target_element.offset().top - 10
+	        scrollTop: target_element.offset().top - $('.nav').height() - target_element.css("marginTop").replace('px', '')
 	    }, 900);
 	    return false;
 	});
@@ -71,6 +71,10 @@ $(document).ready(function(){
 	// and run it again every time you scroll
 	$(window).scroll(function() {
 		stickyNav();
+	});
+
+	$( window ).resize(function() {
+		stickyNavTop = $(window).height()*.92
 	});
 
 });

@@ -89,6 +89,7 @@
 /*  General CSS*/
 body{
     background: #fff;
+    padding-top: 50px;
 }
 
 .wrapper{
@@ -102,7 +103,7 @@ h1, h2, h3, h4, h5 ,h6{
     letter-spacing: 1px;
 }
 
-h1              { font-size: 2em; margin: .67em 0 }
+h1              { font-size: 2em; margin: .5em 0 }
 h2              { font-size: 1.5em; margin: .75em 0 }
 h3              { font-size: 1.17em; margin: .83em 0 }
 h5              { font-size: .83em; margin: 1.5em 0 }
@@ -132,8 +133,8 @@ h5, h6          { font-weight: bolder }
 /*    Billboard    */
 .billboard{
     width: 100%;
-    height: 92vh;
-    min-height: 15px;
+    height: 100vh;
+    min-height: 20vh;
     position: relative;
 }
 
@@ -142,7 +143,8 @@ h5, h6          { font-weight: bolder }
      
     background-size: cover;
     background-attachment: fixed;
-    background-position: center top;
+    background-position: center 50px;
+    background-clip: content-box;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -170,8 +172,10 @@ h5, h6          { font-weight: bolder }
 }
 
 .billboard .caption{
-    padding-top: 230px;
+    padding-top: 30vh;
     text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    background-clip: content-box;
 }
 
 .billboard .caption.light{
@@ -186,15 +190,11 @@ h5, h6          { font-weight: bolder }
     font-family: "tangerinebold";
     font-size: 70px;
     font-weight: bold; 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .billboard .caption.light h1{
     color: #fff;
-}
-
-.billboard .caption.dark h1{
-    color: #5d5d5d;
 }
 
 .billboard .caption p{
@@ -207,97 +207,18 @@ h5, h6          { font-weight: bolder }
     color: #fff;
 }
 
-.billboard .caption.dark p{
-    color: #5d5d5d;
-}
-
-.billboard .caption hr{
-    display: inline-block;
-    height: 1px;
-    width: 30px;
-    border: 0!important;   
-    margin: 0;
-    padding: 0;
-}
-
 .billboard .caption.light hr{
     background: #fff;
 }
 
-.billboard .caption.dark hr{
-    background: #5d5d5d;
-}
-
-
-
-
-
 
 /*    header    */
-
 .navbar{
-    background-color: #192452;
-    height: 8vh;
+    background-color: #FFFFFF;
 }
 
-header{
-    width: 100%;
-    height: 75px;
-}
-
-header .logo{
-    float: left;
-    margin-top: 50px;
-}
-
-header nav{
-    float: left;
-    position: relative;
-    left: 50%;
-}
-
-.nav-fixer{
-    float: left;
-    position: relative;
-    left: -50%;
-    top: 50%;
-    transform: translateY(50%);
-}
-
-header nav ul li{
-    list-style: none;
-    display: block;
-    float: left;
-    margin-right: 25px;
-    margin-left: 25px;
-}
-
-header nav ul li a{
-    text-decoration: none;  
-    font-family: "tangerineregular";
-    font-size: 30px;
-
-    transition:all .2s linear;
-    -webkit-transition:all .2s linear;
-    -moz-transition:all .2s linear;
-    -o-transition:all .2s linear;
-}
-
-header.light nav ul li a{  
-    color: #FFFFFF;
-}
-
-header.light nav ul li a:hover{
-    color: #7583BA;
-}
-
-.sticky {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
+#navbar-holder{
+    
 }
 
 

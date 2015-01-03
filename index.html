@@ -9,8 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="css/fancybox.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/fancybox.js"></script>
     <script type="text/javascript" src="js/fancybox-buttons.js"></script>
     <script type="text/javascript" src="js/fancybox-media.js"></script>
@@ -20,28 +22,38 @@
 </head>
 <body>
 
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header navbar-left">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-holder">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="navbar-holder">
+	      <ul class="nav navbar-nav navbar-center">
+	        <li class="active"><a href="#OurStory">Our Story <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#Festivities">Festivities</a></li>
+	        <li><a href="#Travel">Travel</a></li>
+	        <li><a href="#Registry">Registry</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
 	<section class="billboard light">
 		<div class="caption light clearfix">
 			<h1 class="wow animated fadeInUp">Lauren & Ben</h1>
 			<p class="wow animated fadeInUp" data-wow-delay=".5s">October 17, 2015</p>
 		</div>
 	</section><!--  End billboard  -->
-
-
-	<section class="light navbar nav">
-		<header class="wrapper light shadow">
-			<nav>
-				<div class="nav-fixer">
-					<ul>
-						<li><a class="header_button" id="header_directions" href="#">Directions</a></li>
-						<li><a class="header_button" id="header_venue" href="#">Venue</a></li>
-						<li><a class="header_button" id="header_party" href="#">Bridal Party</a></li>
-						<li><a class="header_button" id="header_registry" href="#">Registry</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-	</section>
 
 
 	<section class="services wrapper" id="directions_section">
